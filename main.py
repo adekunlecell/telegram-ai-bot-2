@@ -105,7 +105,7 @@ async def gaming_news(update: Update, context: ContextTypes.DEFAULT_TYPE):
         if response.status_code == 200:
             articles = response.json().get("articles", [])[:3]
             if articles:
-                reply = "🕹️ Top Gaming News:
+                reply = "🕹️ Top Gaming News:\n\n"
 
 "
                 for article in articles:
